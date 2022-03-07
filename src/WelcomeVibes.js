@@ -4,8 +4,9 @@ function WelcomeVibes() {
 
   
   return (
-    <div>
-      Welcome Vibes
+    <div className="container">
+     <h1 className="CenterPiece">Cryptonaire</h1>
+     <h5 className="CenterPiece">Dream Big</h5>
     </div>
   )
 }

@@ -1,6 +1,11 @@
 import React from 'react'
 
-function Navbar() {
+function Navbar({data}) {
+  console.log(data);
+  // console.log(data);
+  // let btcPrice = data.map((currency)=> {
+  //   // console.log(currency);
+  // })
   return (
     <div>      
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -24,17 +29,19 @@ function Navbar() {
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown link
             </a>
-            <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li>
-              <li><a className="dropdown-item" href="#">Something else here</a></li>
+            <ul id="dropDown"className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a className="dropdown-item" href="#">Actual Wallet</a></li>
+              <li><a className="dropdown-item" href="#">Dream Portfolio</a></li>
+              <li><a className="dropdown-item" href="#">About Us</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  {/* <h4> BTC price = {data.bitcoin.usd}</h4> */}
 </div>
+
   )
 }
 

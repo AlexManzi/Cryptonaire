@@ -10,16 +10,15 @@ useEffect(()=> {
 fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_currencies=usd&include_market_cap=true&include_24hr_change=true')
 .then(resp => resp.json())
 .then(data => {
-  setData(data)
+  setData([data])
 })
 
 },[])
-
-console.log(data);
+// console.log(data)
 
   return (
    <div>
-     <Navbar />
+     <Navbar data={data} />
     <WelcomeVibes/>
     <ActualWallet />
     
