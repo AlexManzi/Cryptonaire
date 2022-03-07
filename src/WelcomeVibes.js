@@ -1,8 +1,12 @@
 import React from 'react'
 
 function WelcomeVibes() {
+
+  
   return (
-    <div>WelcomeVibes</div>
+    <div>
+      Welcome Vibes
+    </div>
   )
 }
 
