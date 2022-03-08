@@ -2,7 +2,12 @@ import React from 'react'
 
 function ActualWallet() {
   return (
-    <div>ActualWallet</div>
+    <div id="actualWallet">
+         {/* <form>
+           <label for='BTC'>BTC Amount</label>
+           <input type='text' id="BTCAmount" name="BTCAmount" value='' */}
+         {/* </form> */}
+    </div>
   )
 }
 

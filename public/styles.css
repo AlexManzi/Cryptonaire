@@ -1,16 +1,25 @@
+html, body {
+    margin:0;
+    padding:0;
+    width:100%
+}
+
+#root {
+    width:100%
+}
+
 #navbarDropdownMenuLink {
     opacity: 0;
     
 }
 
-#About {
-    background-color: rgb(187, 99, 99);
-}
+
 
 .CenterPiece{
     text-align: center;
     font-family:Hikou Regular;
-    margin:10px;
+    padding:10px;
+
 }
  
 #priceBar {
@@ -19,9 +28,24 @@
 
 }
 
-.container {
+#container {
     background-color: rgb(197, 140, 102);
-    margin: 0%;
     padding:0%;
+    height: 75vh;
+    width: 100%;
+}
+
+#actualWallet {
+    height:75vh;
+    background-color: grey;
+}
+
+#dreamWallet {
+    height: 75vh;
+    background-color: black;
+}
+
+#About {
+    background-color: rgb(187, 99, 99);
     height: 75vh;
 }
