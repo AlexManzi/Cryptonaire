@@ -1,11 +1,10 @@
 import React from 'react'
 
+
+
 function Navbar({data}) {
-  console.log(data);
-  // console.log(data);
-  // let btcPrice = data.map((currency)=> {
-  //   // console.log(currency);
-  // })
+  
+ 
   return (
     <div>      
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,7 +38,6 @@ function Navbar({data}) {
       </div>
     </div>
   </nav>
-  {/* <h4> BTC price = {data.bitcoin.usd}</h4> */}
 </div>
 
   )
