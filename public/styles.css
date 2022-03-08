@@ -13,7 +13,10 @@ html, body {
     
 }
 
+#TopBar {
+    height: 10vh;
 
+}
 
 .CenterPiece{
     text-align: center;
@@ -21,31 +24,37 @@ html, body {
     padding:10px;
 
 }
- 
 #priceBar {
+    text-align: center;
+    background-color:aqua;
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
 
-
-
+#EthPrice {
+    margin-left: 100px;
 }
 
 #container {
     background-color: rgb(197, 140, 102);
     padding:0%;
-    height: 75vh;
+    height: 85vh;
     width: 100%;
 }
 
 #actualWallet {
-    height:75vh;
+    height:100vh;
     background-color: grey;
 }
 
 #dreamWallet {
-    height: 75vh;
+    height: 100vh;
     background-color: black;
 }
 
 #About {
     background-color: rgb(187, 99, 99);
-    height: 75vh;
+    height: 65vh;
 }

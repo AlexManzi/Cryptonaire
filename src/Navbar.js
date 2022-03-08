@@ -7,7 +7,7 @@ function Navbar({data}) {
  
   return (
     <div>      
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="TopBar">
     <div className="container-fluid">
       <a className="navbar-brand" href="">Cryptonaire</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,20 +38,10 @@ function Navbar({data}) {
       </div>
     </div>
   </nav>
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
-    <div className="container-stuck">
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" id="coinAmount" href="#">1 BTC = ${data.bitcoin.usd}</a>
-          </li>s
-          <li className="nav-item">
-            <a className="nav-link" id="coinAmount" href="#"> 1 ETH = ${data.ethereum.usd}</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="priceBar">
+      <h4> 1 BTC = ${data.bitcoin.usd}</h4>
+      <h4 id="EthPrice"> 1 ETH = ${data.ethereum.usd}</h4>
+  </div>
 </div>
 
   )
