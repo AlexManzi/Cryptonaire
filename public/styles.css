@@ -18,43 +18,68 @@ html, body {
 
 }
 
-.CenterPiece{
-    text-align: center;
-    font-family:Hikou Regular;
-    padding:10px;
-
-}
 #priceBar {
     text-align: center;
-    background-color:aqua;
-    padding-top: 7px;
+    background-color:#DF5D5D;;
+    padding-top: 10px;
     display: flex;
     justify-content: center;
     font-family: sans-serif;
 }
 
+
 #EthPrice {
     margin-left: 100px;
 }
 
+.Cryptonaire{
+    text-align: center;
+    font-family:Hikou Regular;
+    padding-top:8px;
+    color: white;
+
+}
+
+.dreamBig{
+    text-align: center;
+    font-family:Hikou Regular;
+    color: rgb(223, 93, 93);
+
+}
+
+
+
 #container {
-    background-color: rgb(197, 140, 102);
-    padding:0%;
+    background-color: #000000;
     height: 85vh;
     width: 100%;
 }
 
+.leftTitle {
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 40px;
+    padding: 20px;
+    text-align: left;
+    background-color: #ff8177;
+    background:#DF5D5D;
+    max-width: fit-content;
+    height: 30vh;
+    justify-content: auto;
+    
+}
+
 #actualWallet {
     height:100vh;
-    background-color: grey;
+    background-color: #150050;
 }
 
 #dreamWallet {
     height: 100vh;
-    background-color: black;
+    background-color: #9372ad;
 }
 
 #About {
-    background-color: rgb(187, 99, 99);
+    background-color: #1e1f17;
     height: 65vh;
 }
