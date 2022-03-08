@@ -18,11 +18,11 @@ function App() {
 // props for navBar and for ActualWallet below 
 // btc={btc} eth={eth}
   return (
-    <div>
+    <>
       <PriceFetchManager/>
       <DreamWallet />
       <About />
-    </div>
+    </>
   );
 }
 

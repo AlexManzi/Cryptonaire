@@ -3,21 +3,7 @@ import CryptoCard from './CryptoCard'
 
 function DreamWallet() {
   return (
-    <div>DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      DreamWallet
-      v
-      DreamWallet
-      DreamWallet
-      
+    <div id='dreamWallet'>DreamWallet   
         <CryptoCard />
     </div>
   )
