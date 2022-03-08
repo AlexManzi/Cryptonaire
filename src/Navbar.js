@@ -38,6 +38,20 @@ function Navbar({data}) {
       </div>
     </div>
   </nav>
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+    <div className="container-stuck">
+      <div className="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" id="coinAmount" href="#">1 BTC = ${data.bitcoin.usd}</a>
+          </li>s
+          <li className="nav-item">
+            <a className="nav-link" id="coinAmount" href="#"> 1 ETH = ${data.ethereum.usd}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </div>
 
   )
