@@ -7,16 +7,16 @@ function Navbar({data}) {
  
   return (
     <div>      
-        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="TopBar">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="TopBar">
     <div className="container-fluid">
-      <a className="navbar-brand" href="">Cryptonaire</a>
+      <a className="navbar-brand" href=""id="brandName">Cryptonaire</a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" href="#">Actual Wallet</a>
+            <a className="nav-link" href="#">Actual Wallet</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">Dream Portfolio</a>
