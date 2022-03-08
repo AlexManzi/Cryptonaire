@@ -19,6 +19,7 @@ function ActualWallet({data, handleBitcoinCalculation, userBitcoinTotal, handleE
         <p>Your Current Amount of Bitcoin in Dollars is ${userBitcoinTotal}</p>
         <p>Your Current Amount of Ethereum in Dollars is ${userEthereumTotal}</p>
         <h4>The total value of your Defi Wallet is ${totalWallet}</h4>
+        <img src="https://blog.crypto.com/content/images/size/w1600/2022/01/220112-Header-Banner.png" id="globePic" alt="bgpic"/>
       </div>
     </div>
   )
