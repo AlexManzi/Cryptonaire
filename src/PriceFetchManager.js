@@ -36,7 +36,7 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum&vs_c
 fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false')
 .then(resp => resp.json())
 .then(bigData => {
-  console.log(bigData[0].image)
+  // console.log(bigData[0].image)
 })
 
 function handleBitcoinCalculation(event) {
@@ -54,7 +54,7 @@ function handleEthereumCalculation(event) {
   <>
     <Navbar data={data} /> 
     <WelcomeVibes data={data}/>
-    <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
+    <ActualWallet handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
     
   </>
   )

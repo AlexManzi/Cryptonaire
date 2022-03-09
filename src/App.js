@@ -9,14 +9,8 @@ import About from './About';
 
 
 function App() {
-// fetch data here and pass to 
 
 
-
-// filter data to get btc and eth prices
-
-// props for navBar and for ActualWallet below 
-// btc={btc} eth={eth}
   return (
     <>
       <PriceFetchManager/>
