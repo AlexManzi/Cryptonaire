@@ -9,9 +9,11 @@ function WelcomeVibes({data}) {
     <h5 className="dreamBig">Dream Bigger</h5>
 
     <div className='leftTitle'>
+        <br></br>
         <h3>REIMAGINE YOUR CRYPTO</h3>
         <br></br>
-        <h3 id='dreamBigger'> DREAM BIGGER </h3>
+        <br></br>
+        <h3 id='dreamBigger'> BE FEARLESS </h3>
     </div>
 
     <div className='rightTitle'>
