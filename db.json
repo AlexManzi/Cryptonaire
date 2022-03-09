@@ -1,0 +1,12 @@
+{
+  "cryptoCard": [
+    {
+      "id": 1,
+      "DreamEthAmount": 0,
+      "DreamBTCAmount": 0,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "Name": "Card"
+    }
+  ]
+}

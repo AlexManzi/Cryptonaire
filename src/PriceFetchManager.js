@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import ActualWallet from "./ActualWallet"
 import WelcomeVibes from './WelcomeVibes';
 
+
 function PriceFetchManager() {
 
 const [data, setData] = useState({
@@ -38,6 +39,8 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
 .then(bigData => {
   // console.log(bigData[0].image)
 })
+
+
 
 
 function handleBitcoinCalculation(event) {

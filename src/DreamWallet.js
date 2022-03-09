@@ -3,7 +3,7 @@ import CryptoCard from './CryptoCard'
 
 // 
 
-function DreamWallet() {
+function DreamWallet({cardArray}) {
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
@@ -63,7 +63,7 @@ function DreamWallet() {
               <br /><br />
               <button className='btn btn-primary'>Create Card</button>
         </div>
-          <CryptoCard  />
+          <CryptoCard />
       </div>
     </>
   )
