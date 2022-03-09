@@ -54,7 +54,7 @@ function handleEthereumCalculation(event) {
   <>
     <Navbar data={data} /> 
     <WelcomeVibes data={data}/>
-    <ActualWallet handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
+    <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
     
   </>
   )

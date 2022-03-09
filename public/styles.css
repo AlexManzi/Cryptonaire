@@ -46,7 +46,7 @@ html, body {
     font-family:Hikou Regular;
     padding-top:140px;
     color: white;
-    margin-top: ;
+    font-size: 3.75em; 
 }
 
 .dreamBig{
@@ -120,6 +120,7 @@ html, body {
 #dreamWallet {
     height: 88vh;
     background-color: #9372ad;
+    display: flex;
 }
 
 #DreamWalletHeading, #Dreams {

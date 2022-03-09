@@ -5,7 +5,9 @@ import CryptoCard from './CryptoCard'
 
 function DreamWallet() {
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
-  const [BTCPrice, setBTCPrice] = useState('')
+  const [BTCPrice, setBTCPrice] = useState(null)
+  const [DreamEthAmount, setDreamEthAmount] = useState (null);
+  const [EthPrice, setEthPrice] = useState(null);
 
   function handleDreamBTCBase (event) {
     setDreamBTCAmount(event.target.value)
@@ -16,14 +18,19 @@ function DreamWallet() {
    setBTCPrice(event.target.value) 
   }
 
-  let BTCTotal = DreamBTCAmount * BTCPrice;
-  console.log(DreamBTCAmount);
-  console.log(BTCPrice);
+  function handleEthBase (event) {
+    setDreamEthAmount(event.target.value);
 
-
-  function handleDreamETH (event) {
-    // we set the value of amount
   }
+
+  function handleEthMultiplication (event) {
+    setEthPrice(event.target.value);
+  }
+
+  let BTCTotal = DreamBTCAmount * BTCPrice;
+  let EthTotal = DreamEthAmount * EthPrice;
+  let TotalValue = EthTotal + BTCTotal
+
 
   return (
     <>
@@ -39,19 +46,28 @@ function DreamWallet() {
             <label id='DreamBTCLabel'>Dream Price </label>
             <input id='DreamBTCInput' placeholder='set the price..' onChange={handleDreamBTCMultiplication}></input>
             <label id="actualWalletLabel">Your ETH </label>
-            <input type="text" id="userWalletInput" name="lname" placeholder="Enter ETH" ></input>
-          </div>
-          <div id="dollarValueChart">
-            <h3>Dollar Value</h3>
-            <p> Your Current BTC Holdings ${BTCTotal}</p>
-            <p> Your Current ETH Holdings $</p>
-            <h4> Current Wallet Total = $</h4>
+            <input type="text" id="userWalletInput" name="lname" placeholder="Enter ETH" onChange={handleEthBase}></input>
+            <label id='DreamBTCLabel'>Dream Price </label>
+            <input id='DreamBTCInput' placeholder='set the price..' onChange={handleEthMultiplication}></input>
           </div>
         </div> 
+
+        <div className="dollarValueChart">
+            <h3>Dollar Value</h3>
+            <p> Your Current BTC Holdings <br></br>${BTCTotal}</p>
+            <p> Your Current ETH Holdings <br></br> ${EthTotal}</p>
+            <h4> Current Wallet Total = ${TotalValue}</h4>
+            <form>
+              <label className='Name'>Name of Portfolio</label> 
+              <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
+              <br /><br />
+              <input type="submit" value="Create Card"></input>
+            </form>
+        </div>
           <CryptoCard />
       </div>
     </>
   )
 }
 
-export default DreamWallet
+export default DreamWallet;
