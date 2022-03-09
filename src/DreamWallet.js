@@ -57,12 +57,11 @@ function DreamWallet() {
             <p> Your Current BTC Holdings <br></br>${BTCTotal}</p>
             <p> Your Current ETH Holdings <br></br> ${EthTotal}</p>
             <h4> Current Wallet Total = ${TotalValue}</h4>
-            <form>
+            
               <label className='Name'>Name of Portfolio  </label> 
               <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
               <br /><br />
-              <input className='btn btn-primary' type="submit" value="Create Card"></input>
-            </form>
+              <button className='btn btn-primary'>Create Card</button>
         </div>
           <CryptoCard  />
       </div>
