@@ -103,7 +103,10 @@ html, body {
 }
 
 #userWalletInput {
-    margin-left: 10px
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
 }
 
 #dollarValueChart {
@@ -119,7 +122,14 @@ html, body {
     background-color: #9372ad;
 }
 
-#About {
+#DreamWalletHeading, #Dreams {
+    text-align: center;
+    /* margin-right:515px; */
+}
+
+
+#footer {
     background-color: #1e1f17;
-    height: 65vh;
+    margin-bottom: 0px;
+    color:white;
 }
