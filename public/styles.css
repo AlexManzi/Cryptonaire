@@ -1,7 +1,8 @@
 html, body {
     margin:0;
     padding:0;
-    width:100%
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #root {
@@ -14,10 +15,17 @@ html, body {
 }
 
 #TopBar {
-    height: 10vh;
-    font-size: 1.2em;
-    min-width: 100%;
-    position: fixed;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 2rem;
+  font-size: 1.3em;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  margin: auto;
+  top: 0;
 }
 
 #brandName {
@@ -26,12 +34,13 @@ html, body {
 
 #priceBar {
     text-align: center;
-    margin-top: 4.5%;
+    margin-top: 3.75%;
     background-color:#DF5D5D;;
     padding-top: 10px;
     display: flex;
     justify-content: center;
     font-family: sans-serif;
+    opacity: 0.9;
     min-width: 100%;
     position: fixed;
 }
@@ -106,19 +115,39 @@ html, body {
     margin: -200%
 }
 
+#inputs {
+  border: 5px solid #DF5D5D ;
+  margin-top: 5%;
+  width: 30%;
+  height: 30%;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
 #userWalletInput {
     margin-left: 90px;
-    margin-top: 10px;
+    margin-top: 5%;
     margin-bottom: 10px;
     padding: 15px;
+    width: 50%;
+    display: flex;
+    border: 5px solid #DF5D5D;
+    background: none;
+    border-radius: 10px;
+    color:white;
+    font-size: 1.2em;
 }
 
 #dollarValueChart {
     text-align: center;
     border: 3px solid #DF5D5D;
     width: 33%;
-    height: 25%;
+    height: 30%;
+    padding: 10px;
     float: right;
+    margin-top: -13%;
+    border-radius: 10px;
+    margin-right: 10px;
 }
 
 #dreamWallet {
@@ -139,22 +168,6 @@ html, body {
     width: 30px;
     text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -261,3 +274,4 @@ html, body {
 /* #founders {
  color:rgb(223, 93, 93)
 } */
+

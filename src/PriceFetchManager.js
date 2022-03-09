@@ -39,6 +39,7 @@ fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=mark
   // console.log(bigData[0].image)
 })
 
+
 function handleBitcoinCalculation(event) {
   const userValue = event.target.value;
   setUserBitcoin(userValue * bitcoinHelper)
@@ -54,7 +55,7 @@ function handleEthereumCalculation(event) {
   <>
     <Navbar data={data} /> 
     <WelcomeVibes data={data}/>
-    <ActualWallet handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
+    <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
     
   </>
   )
