@@ -7,7 +7,7 @@ function About() {
             <div className="container">
                 <div className="row">
                     <div  id='founders' className="col-sm-6 col-md-3 item">
-                        <h3>Helpful Links</h3>
+                        <h5>Helpful Links</h5>
                         <ul>
                             <li><a href="#">Cryptonaire Soundtrack</a></li>
                             <li><a href="#">Don't be like Larry</a></li>
@@ -15,7 +15,7 @@ function About() {
                         </ul>
                     </div>
                     <div  id='founders' className="col-sm-6 col-md-3 item">
-                        <h3>Meet The Team</h3>
+                        <h5>Meet The Team</h5>
                         <ul >
                             <li ><a href="#">Moshe</a></li>
                             <li><a href="#">Alex</a></li>
@@ -23,10 +23,9 @@ function About() {
                         </ul>
                     </div>
                     <div className="col-md-6 item text">
-                        <h3>Cryptonaire</h3>
-                      
+                        <h5>Cryptonaire</h5>
                         <p>We at Cryptonaire believe in the power of Dreams.<br></br>
-                         Dreams have been the source of placing men on the moon, the lightbulb, the internet, and Crypto. Please Don't Stop Dreaming. <br></br><br></br>
+                         Dreams created the lightbulb, founded the internet, placed men on the moon, and gave birth to Crypto. Please Don't Stop Dreaming. <br></br><br></br>
                         #DreamBigger #ImagineMore #BeFearless 
                         </p>
                     </div>
