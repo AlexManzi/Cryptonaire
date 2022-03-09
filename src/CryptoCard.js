@@ -1,6 +1,7 @@
 import React from 'react'
 
-function CryptoCard() {
+function CryptoCard({card}) {
+  console.log(card)
   return (
     <>
  <div id="CryptoCard" className="card">
