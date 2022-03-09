@@ -25,7 +25,7 @@ function About() {
                     <div className="col-md-6 item text">
                         <h5>Cryptonaire</h5>
                         <p>We at Cryptonaire believe in the power of Dreams.<br></br>
-                         Dreams created the lightbulb, founded the internet, placed men on the moon, and gave birth to Crypto. Please Don't Stop Dreaming. <br></br><br></br>
+                        Dreams created the lightbulb, founded the internet, placed men on the moon, and gave birth to Crypto. Please Don't Stop Dreaming. <br></br><br></br>
                         #DreamBigger #ImagineMore #BeFearless 
                         </p>
                     </div>

@@ -55,7 +55,7 @@ html, body {
     font-family:Hikou Regular;
     padding-top:140px;
     color: white;
-    font-size: 3.75em; 
+    font-size: 5em; 
 }
 
 .dreamBig{
@@ -87,6 +87,14 @@ html, body {
     
 }
 
+#actualInfo {
+  text-align: center;
+  width: 30%;
+  justify-content: auto;
+  display: flex;
+  margin-left: 35%
+}
+
 #actualWallet {
     height:88vh;
     background-color: #150050;
@@ -95,8 +103,9 @@ html, body {
 
 #walletHeading {
     margin-left: 10px;
-    padding-top: 0px;
+    padding-top: 1%;
     text-align: center;
+    font-size: 3em;
 }
 #liveCryptoHoldings {
     text-align: center;
@@ -117,8 +126,8 @@ html, body {
 
 #inputs {
   border: 5px solid #DF5D5D ;
-  margin-top: 5%;
-  width: 30%;
+  margin-top: 2.5%;
+  width: 33%;
   height: 30%;
   border-radius: 10px;
   margin-left: 10px;
@@ -138,9 +147,20 @@ html, body {
     font-size: 1.2em;
 }
 
+#actualHeading {
+  text-align: right;
+  float: right;
+  margin-right: 5%;
+}
+
+#amountHeading {
+  float: left;
+  margin-left: 5%;
+}
+
 .dollarValueChart {
     text-align: center;
-    border: 3px solid #DF5D5D;
+    border: 5px solid #DF5D5D;
     width: 33%;
     height: 30%;
     padding: 10px;
@@ -150,7 +170,7 @@ html, body {
 
 #actualDollarValueChart {
     float: right;
-    margin-top: -13%;
+    margin-top: -13.5%;
 }
 
 #dreamWallet {
@@ -168,7 +188,6 @@ html, body {
 #DreamBTC {
     padding-left: 50px;
     display: inline-block;
-
     width: 30px;
     text-align: left;
 }
@@ -275,7 +294,7 @@ html, body {
     margin-bottom:0;
   }
 
-/* #founders {
- color:rgb(223, 93, 93)
-} */
+  #founders {
+    font-size: 3em;
+  }
 

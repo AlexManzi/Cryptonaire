@@ -5,7 +5,7 @@ function WelcomeVibes({data}) {
   
   return (
     <div id='container'>
-    <h1 className="Cryptonaire">Cryptonaire</h1>
+    <h1 className="Cryptonaire">CRYPTONAIRE</h1>
     <h5 className="dreamBig">Dream Bigger</h5>
 
     <div className='leftTitle'>
