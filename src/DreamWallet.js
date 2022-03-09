@@ -3,7 +3,7 @@ import CryptoCard from './CryptoCard'
 
 // 
 
-function DreamWallet() {
+function DreamWallet({cardArray}) {
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
@@ -61,10 +61,10 @@ function DreamWallet() {
               <label className='Name'>Name of Portfolio  </label> 
               <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
               <br /><br />
-              <input className='btn btn-primary' type="submit" value="Create Card"></input>
+              <input className='btn btn-primary' type="submit"  value="Create Card"></input>
             </form>
         </div>
-          <CryptoCard  />
+          <CryptoCard />
       </div>
     </>
   )
