@@ -52,7 +52,7 @@ function DreamWallet() {
           </div>
         </div> 
 
-        <div className="dollarValueChart">
+        <div id="dreamDollarValueChart" className="dollarValueChart">
             <h3>Dollar Value</h3>
             <p> Your Current BTC Holdings <br></br>${BTCTotal}</p>
             <p> Your Current ETH Holdings <br></br> ${EthTotal}</p>
