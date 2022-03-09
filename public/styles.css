@@ -193,6 +193,25 @@ html, body {
 }
 
 
+#CryptoCard {
+background-color: #0c0c0c;
+height: 18vh;
+color: #0ca3e9;
+margin-top: 45%;
+margin-right: 15%;
+min-width: 15vw;
+margin: 35% 2% 7% 2%
+
+}
+
+#deletebttn {
+    margin: 0.5%;
+}
+
+
+
+
+
 
 #footer {
     background-color: #1e1f17;
