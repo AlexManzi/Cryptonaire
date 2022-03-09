@@ -1,5 +1,5 @@
 import React from 'react'
-// import CurrencyFormat from 'react-currency-format';
+
 
 function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handleEthereumCalculation, userEthereumTotal}) {
   let totalBTC = userBitcoinTotal

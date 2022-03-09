@@ -17,6 +17,7 @@ function App() {
     fetch('http://localhost:8001/cryptoCard')
     .then(resp => resp.json())
     .then(card => {
+      console.group(card)
       setCardArray(card)
     })
   }, [])

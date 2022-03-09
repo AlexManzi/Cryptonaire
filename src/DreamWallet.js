@@ -12,6 +12,7 @@ function DreamWallet({cardArray}) {
     />
   })
 
+
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
@@ -69,12 +70,14 @@ function DreamWallet({cardArray}) {
               <label className='Name'>Name of Portfolio  </label> 
               <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
               <br /><br />
+              <input className='btn btn-primary' type="submit"  value="Create Card"></input>
+          
+              {cardInfo}
               <button className='btn btn-primary'>Create Card</button>
         </div>
         <div>
           {mappedJson}
         </div>
-
       </div>
     </>
   )
