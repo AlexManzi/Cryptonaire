@@ -1,11 +1,12 @@
 import React from 'react'
 
+
 function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handleEthereumCalculation, userEthereumTotal}) {
   let totalBTC = userBitcoinTotal
   let totalETH = userEthereumTotal
   
 
-  console.log(data.bitcoin.usd_market_cap)
+  // console.log(data.bitcoin.usd_market_cap)
   
   let totalWallet = (totalBTC + totalETH)
   return (

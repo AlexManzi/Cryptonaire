@@ -4,14 +4,15 @@ import CryptoCard from './CryptoCard'
 // 
 
 function DreamWallet({cardArray}) {
-  let cardInfo = cardArray.map(card => {
-    return (
-      <CryptoCard
-        key={card.id}
-        card={card}
-        />
-    )
+
+  let mappedJson = cardArray.map((card)=> {
+    return <CryptoCard 
+    key={card.id} 
+    card={card}
+    />
   })
+
+
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
@@ -69,13 +70,13 @@ function DreamWallet({cardArray}) {
               <label className='Name'>Name of Portfolio  </label> 
               <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
               <br /><br />
-<<<<<<< HEAD
               <input className='btn btn-primary' type="submit"  value="Create Card"></input>
-            </form>
-            {cardInfo}
-=======
+          
+              {cardInfo}
               <button className='btn btn-primary'>Create Card</button>
->>>>>>> d6358cb6bceaa6abaac29dbb910e0b9f428aa3f4
+        </div>
+        <div>
+          {mappedJson}
         </div>
       </div>
     </>
