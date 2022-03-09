@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ActualWallet({data, handleBitcoinCalculation, userBitcoinTotal, handleEthereumCalculation, userEthereumTotal}) {
+function ActualWallet({handleBitcoinCalculation, userBitcoinTotal, handleEthereumCalculation, userEthereumTotal}) {
   let totalBTC = userBitcoinTotal
   let totalETH = userEthereumTotal
   
@@ -20,9 +20,10 @@ function ActualWallet({data, handleBitcoinCalculation, userBitcoinTotal, handleE
       </div>
       <div id="dollarValueChart">
         <h3>Dollar Value</h3>
-        <p> Your Current BTC Holdings ${userBitcoinTotal}</p>
-        <p> Your Current ETH Holdings ${userEthereumTotal}</p>
-        <h4> Current Wallet Total = ${totalWallet}</h4>
+        <p> Your Current BTC Holdings <br></br> ${userBitcoinTotal}</p>
+        <p> Your Current ETH Holdings <br></br> ${userEthereumTotal}</p>
+        <h4> Current Wallet Total = <br></br>
+        ${totalWallet}</h4>
       </div>
     </div>
   )
