@@ -4,6 +4,14 @@ import CryptoCard from './CryptoCard'
 // 
 
 function DreamWallet({cardArray}) {
+
+  let mappedJson = cardArray.map((card)=> {
+    return <CryptoCard 
+    key={card.id} 
+    card={card}
+    />
+  })
+
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
@@ -63,7 +71,10 @@ function DreamWallet({cardArray}) {
               <br /><br />
               <button className='btn btn-primary'>Create Card</button>
         </div>
-          <CryptoCard />
+        <div>
+          {mappedJson}
+        </div>
+
       </div>
     </>
   )
