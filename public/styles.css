@@ -138,16 +138,19 @@ html, body {
     font-size: 1.2em;
 }
 
-#dollarValueChart {
+.dollarValueChart {
     text-align: center;
     border: 3px solid #DF5D5D;
     width: 33%;
     height: 30%;
     padding: 10px;
-    float: right;
-    margin-top: -13%;
     border-radius: 10px;
     margin-right: 10px;
+}
+
+#actualDollarValueChart {
+    float: right;
+    margin-top: -13%;
 }
 
 #dreamWallet {

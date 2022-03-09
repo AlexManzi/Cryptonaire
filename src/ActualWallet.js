@@ -17,7 +17,7 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
         <input type="text" id="userWalletInput" name="fname" placeholder="Enter BTC" onChange={handleBitcoinCalculation}></input>
         <input type="text" id="userWalletInput" name="lname" placeholder="Enter ETH" onChange={handleEthereumCalculation}></input>
       </div>
-      <div id="dollarValueChart">
+      <div id="actualDollarValueChart" className="dollarValueChart">
         <h3>Dollar Value</h3>
         <p> Your Current BTC Holdings <br></br> ${userBitcoinTotal}</p>
         <p> Your Current ETH Holdings <br></br> ${userEthereumTotal}</p>
