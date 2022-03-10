@@ -16,10 +16,10 @@ function About() {
                     </div>
                     <div  id='founders' className="col-sm-6 col-md-3 item">
                         <h5>Meet The Team</h5>
-                        <ul >
-                            <li ><a href="#">Moshe</a></li>
-                            <li><a href="#">Alex</a></li>
-                            <li><a href="#">Evan</a></li>
+                        <ul>
+                            <li><a href="https://github.com/M-Rosenzweig">Moshe</a></li>
+                            <li><a href="https://github.com/AlexManzi">Alex</a></li>
+                            <li><a href="https://github.com/JohnsonEvan">Evan</a></li>
                         </ul>
                     </div>
                     <div className="col-md-6 item text">
