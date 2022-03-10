@@ -98,27 +98,19 @@ function DreamWallet({}) {
     setArrayName(event.target.value)
   }
 
-
-
   return (
     <>
       <div id='dreamWallet'> 
         <div id="Form">
-          <div id='dreamInputs'>
             <h2 id="DreamWalletHeading">Dream Wallet</h2>
-            <h4 id="Dreams"> Anything is Possible  </h4>
-          
-
-            <label id="actualWalletLabel"> Your BTC </label>
-            <input  type="text" id="userWalletInput" name="fname" placeholder="Enter BTC" onChange={handleDreamBTCBase}></input>
-            <label id='DreamBTCLabel'>Dream Price </label>
-            <input id='DreamBTCInput' placeholder='set the price..' onChange={handleDreamBTCMultiplication}></input>
-            <label id="actualWalletLabel">Your ETH </label>
-            <input type="text" id="userWalletInput" name="lname" placeholder="Enter ETH" onChange={handleEthBase}></input>
-            <label id='DreamBTCLabel'>Dream Price </label>
-            <input id='DreamBTCInput' placeholder='set the price..' onChange={handleEthMultiplication}></input>
+            <h4 id="DreamWalletHeading1"> Anything is Possible  </h4>
+            <h4 id="actualInfo">Here's where you can visualize the crypto that you're currently Hodling. See where your investments currently stand or envision a path for future saving.</h4>
+            <div id='dreamInputs'>
+            <input  type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
+            <input id='userWalletInput2' placeholder='Set Your Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
+            <input type="text" id="userWalletInput1" name="lname" placeholder="Enter Your Dream Amount of ETH" onChange={handleEthBase}></input>
+            <input id='userWalletInput2' placeholder='Set Your Dream ETH Price' onChange={handleEthMultiplication}></input>
           </div>
-        </div> 
 
         <div id="dreamDollarValueChart">
             <h3>Dollar Value</h3>
@@ -135,6 +127,7 @@ function DreamWallet({}) {
           {mappedArray}
         </div>
       </div>
+      </div> 
     </>
   )
 }
