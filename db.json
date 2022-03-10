@@ -8,6 +8,47 @@
       "BTCTotal": 0,
       "name": "Alex & Moish"
     },
+    {
+      "id": 2,
+      "DreamEthAmount": {
+        "DreamEthAmount": "2"
+      },
+      "DreamBTCAmount": {
+        "DreamBTCAmount": "2"
+      },
+      "EthTotal": {
+        "EthTotal": 20
+      },
+      "BTCTotal": {
+        "BTCTotal": 20
+      },
+      "name": {
+        "arrayName": "Moshe"
+      }
+    },
+    {
+      "id": "40da56da-e0af-4718-bbf7-0b363c57cd94",
+      "DreamEthAmount": "2",
+      "DreamBTCAmount": "2",
+      "EthTotal": 4,
+      "BTCTotal": 4,
+      "name": "Mo"
+    },
+    {
+      "id": "f35e9628-78a5-49d3-a8a1-4cc027396bb3",
+      "DreamEthAmount": "2",
+      "DreamBTCAmount": "2",
+      "EthTotal": 20,
+      "BTCTotal": 20,
+      "name": "Alex"
+    },
+    {
+      "id": "cfe7a883-2e1a-4185-923d-c112bed0d700",
+      "DreamEthAmount": "10000",
+      "DreamBTCAmount": "400000",
+      "EthTotal": 1000000000,
+      "BTCTotal": 4000000000,
+      "name": "Evan Dream 3000"
     }
   ]
 }
