@@ -1,7 +1,11 @@
 import React, {useState,useEffect} from "react"
 import Navbar from "./Navbar"
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 import ActualWallet from "./ActualWallet"
 import WelcomeVibes from './WelcomeVibes';
+import DreamWallet from './DreamWallet';
+import About from "./About";
+
 
 
 function PriceFetchManager() {
@@ -53,13 +57,36 @@ function handleEthereumCalculation(event) {
   setUserEthereum(userValue * ethereumHelper)
 }
 
+const [page, setPage] = useState("/")
+
 
   return (
   <>
-    <Navbar data={data} /> 
-    <WelcomeVibes data={data}/>
-    <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
+  <Navbar data={data} /> 
+
+  <Switch>
     
+      <Route  exact path="/">
+          <WelcomeVibes data={data}/>
+        </Route>
+                  
+        <Route path="/actualWallet">
+            <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>    
+        </Route>
+
+        <Route path="/dreamWallet">
+            <DreamWallet/>
+        </Route>
+
+        <Route path="/about">
+            <About /> 
+        </Route>
+                  
+        <Route path="*">
+          <h1>404 not found</h1>
+        </Route>
+            
+  </Switch>
   </>
   )
 }

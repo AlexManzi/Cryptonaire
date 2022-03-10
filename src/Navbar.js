@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { NavLink } from "react-router-dom"
 
 
 
@@ -9,20 +10,20 @@ function Navbar({data}) {
     <div>      
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark" id="TopBar">
     <div className="container-fluid">
-      <a className="navbar-brand" href=""id="brandName">CRYPTONAIRE</a>
+      <NavLink className="navbar-brand" to="/"id="brandName">CRYPTONAIRE</NavLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link" href="#">Actual Wallet</a>
+            <NavLink className="nav-link" to="/actualWallet">Actual Wallet</NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">Dream Portfolio</a>
+            <NavLink className="nav-link" to="/dreamWallet">Dream Portfolio</NavLink>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">About Us</a>
+            <NavLink className="nav-link" to="about">About Us</NavLink>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
