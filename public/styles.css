@@ -97,7 +97,7 @@ html, body {
 }
 
 #actualWallet {
-    height:88vh;
+    height:100vh;
     background-color: #150050;
     color: white;
 }
@@ -197,6 +197,7 @@ html, body {
 
 #DreamWalletHeading1 {
   text-align: center;
+  color: #DF5D5D
 }
 
 #dreamInputs {
@@ -246,6 +247,17 @@ html, body {
   border-radius: 10px;
   color:white;
   font-size: 1.2em;
+}
+
+#createAlternatives{
+  text-align: center;
+}
+
+#cardTotal {
+  background-color: #282d32;
+  padding: 1%;
+  color: white;
+  max-width: fit-content;
 }
 
 
