@@ -184,8 +184,13 @@ html, body {
 
 
 #dreamWallet {
+<<<<<<< HEAD
   background-color: blue;
   height: 88vh
+=======
+  background-color: aqua;
+  height: 100vh
+>>>>>>> 2b81b658a83959a9988ae74e32f64a4cddcd1919
 }
 
 #DreamWalletHeading {

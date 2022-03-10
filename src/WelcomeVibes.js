@@ -17,7 +17,7 @@ function WelcomeVibes({data}) {
     </div>
 
     <div className='rightTitle'>
-      <img></img>
+      {/* <img alt='nightSky' src='./public/skyyy.jpg'></img> */}
       </div>
 
 
