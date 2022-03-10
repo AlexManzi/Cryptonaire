@@ -15,9 +15,6 @@ function DreamWallet({cardArray}) {
   let EthTotal = DreamEthAmount * EthPrice;
   let TotalValue = EthTotal + BTCTotal
 
-
- 
-
   function handleAddToJson() {
     console.log("hello")
     let newObj = {
@@ -47,9 +44,25 @@ function DreamWallet({cardArray}) {
         <CryptoCard 
         key={card.id}
         card={card}
+        handleDelete={handleDelete}
         />
       )
     })
+
+    function handleDelete(card) {
+      fetch('http://localhost:8001/cryptoCard/'+card.id, {
+        method: "DELETE",
+        headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+        },
+    })
+    let cardItemIndex = showArray.indexOf(card)
+    if(cardItemIndex > -1) {
+      let newArray = [...showArray]
+      newArray.splice(cardItemIndex, 1)
+      setShowArray(newArray)
+    }
+    }
 
 
   function handleDreamBTCBase (event) {
