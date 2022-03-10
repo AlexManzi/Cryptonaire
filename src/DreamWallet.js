@@ -106,7 +106,7 @@ function DreamWallet({}) {
             <h4 id="DreamWalletHeading1"> Anything is Possible  </h4>
             <h4 id="actualInfo">Here's where you can visualize the crypto that you're currently Hodling. See where your investments currently stand or envision a path for future saving.</h4>
             <div id='dreamInputs'>
-            <input  type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
+            <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
             <input id='userWalletInput2' placeholder='Set Your Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
             <input type="text" id="userWalletInput1" name="lname" placeholder="Enter Your Dream Amount of ETH" onChange={handleEthBase}></input>
             <input id='userWalletInput2' placeholder='Set Your Dream ETH Price' onChange={handleEthMultiplication}></input>

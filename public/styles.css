@@ -206,11 +206,14 @@ html, body {
   height: 30%;
   border-radius: 10px;
   margin-left: 30px;
+  opacity: .9;
+  background-color: #282d32;
+  color: white
 }
 
 #dreamDollarValueChart {
+  border: 5px solid #DF5D5D ;
   text-align: center;
-    border: 5px solid #DF5D5D;
     width: 33%;
     height: 30%;
     padding: 10px;
@@ -235,12 +238,11 @@ html, body {
 }
 
 #userWalletInput2 {
-  margin-right: 2%;
-  margin-top: 5%;
-  margin-bottom: 10px;
+  margin-top: -8%;
+  margin-right: 10%;
   padding: 15px;
-  width: 40%;
-  display: flex;
+  width: 30%;
+  float: right;
   border: 5px solid #DF5D5D;
   background: none;
   border-radius: 10px;
