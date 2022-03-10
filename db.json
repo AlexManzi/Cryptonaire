@@ -49,6 +49,14 @@
       "EthTotal": 1000000000,
       "BTCTotal": 4000000000,
       "name": "Evan Dream 3000"
+    },
+    {
+      "id": "76a6c6e1-a97b-488a-8ad3-1c9054643de9",
+      "DreamEthAmount": "2",
+      "DreamBTCAmount": "2",
+      "EthTotal": 20,
+      "BTCTotal": 4,
+      "name": "Alex"
     }
   ]
 }
