@@ -91,7 +91,7 @@ function DreamWallet({cardArray}) {
           </div>
         </div> 
 
-        <div id="dreamDollarValueChart" className="dollarValueChart">
+        <div id="dreamDollarValueChart">
             <h3>Dollar Value</h3>
             <p> Your Current BTC Holdings <br></br>${BTCTotal}</p>
             <p> Your Current ETH Holdings <br></br> ${EthTotal}</p>
