@@ -34,7 +34,9 @@ function DreamWallet({}) {
       DreamBTCAmount: DreamBTCAmount,
       EthTotal: EthTotal,
       BTCTotal: BTCTotal,
-      name: arrayName
+      name: arrayName,
+      total: TotalValue
+
     }
     fetch('http://localhost:8001/cryptoCard', {
       method: "POST",
@@ -104,7 +106,7 @@ function DreamWallet({}) {
         <div id="Form">
             <h2 id="DreamWalletHeading">Dream Wallet</h2>
             <h4 id="DreamWalletHeading1"> Anything is Possible  </h4>
-            <h4 id="actualInfo">Here's where you can visualize the crypto that you're currently Hodling. See where your investments currently stand or envision a path for future saving.</h4>
+            <h4 id="createAlternatives"> Create Cards to represent your visions and possibilities. </h4>
             <div id='dreamInputs'>
             <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
             <input id='userWalletInput2' placeholder='Set Your Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>

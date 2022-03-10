@@ -10,6 +10,7 @@ function CryptoCard({card, handleDelete}) {
     <br></br>
     <p>{card.DreamBTCAmount} BTC =${card.BTCTotal}</p>
     <p> {card.DreamEthAmount} ETH =${card.EthTotal}</p>
+    <h5 id='cardTotal'>Total = {card.total}</h5>
     <a id='deletebttn' onClick={() => handleDelete(card)}className="btn btn-danger btn-sm rounded-0">X</a>
   </div>
 </div>
