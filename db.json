@@ -8,23 +8,6 @@
       "BTCTotal": 0,
       "name": "Alex & Moish"
     },
-    {
-      "id": 2,
-      "DreamEthAmount": {
-        "DreamEthAmount": "2"
-      },
-      "DreamBTCAmount": {
-        "DreamBTCAmount": "2"
-      },
-      "EthTotal": {
-        "EthTotal": 20
-      },
-      "BTCTotal": {
-        "BTCTotal": 20
-      },
-      "name": {
-        "arrayName": "Moshe"
-      }
     }
   ]
 }
