@@ -4,24 +4,27 @@ import CryptoCard from './CryptoCard'
 
 // 
 
-function DreamWallet({cardArray}) {
+function DreamWallet({}) {
   const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
   const [BTCPrice, setBTCPrice] = useState(null)
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
   const [EthPrice, setEthPrice] = useState(null);
   let [arrayName, setArrayName] = useState(null)
-  let [showArray, setShowArray] = useState([])
   let BTCTotal = DreamBTCAmount * BTCPrice;
   let EthTotal = DreamEthAmount * EthPrice;
   let TotalValue = EthTotal + BTCTotal
 
+  let [cardArray, setCardArray] = useState([])
+
+
   useEffect(() => {
     fetch('http://localhost:8001/cryptoCard')
     .then(resp => resp.json())
-    .then(data => {
-      setShowArray(showArray)
+    .then(card => {
+      setCardArray(card)
     })
-}, [])
+  }, [])
+
 
   function handleAddToJson() {
     console.log("hello")
@@ -33,7 +36,6 @@ function DreamWallet({cardArray}) {
       BTCTotal: BTCTotal,
       name: arrayName
     }
-    console.log(newObj)
     fetch('http://localhost:8001/cryptoCard', {
       method: "POST",
       headers: {
@@ -43,11 +45,13 @@ function DreamWallet({cardArray}) {
   })
     .then(resp => resp.json())
     .then(data=>{
-      setShowArray([...showArray, data]);
+      setCardArray([...cardArray, data]);
     })
     }
 
-    let mappedArray = showArray.map(card => {
+    
+
+    let mappedArray = cardArray.map(card => {
       return (
         <CryptoCard 
         key={card.id}
@@ -64,11 +68,11 @@ function DreamWallet({cardArray}) {
         'Content-type': 'application/json; charset=UTF-8'
         },
     })
-    let cardItemIndex = showArray.indexOf(card)
+    let cardItemIndex = cardArray.indexOf(card)
     if(cardItemIndex > -1) {
-      let newArray = [...showArray]
+      let newArray = [...cardArray]
       newArray.splice(cardItemIndex, 1)
-      setShowArray(newArray)
+      setCardArray(newArray)
     }
     }
 
@@ -128,7 +132,6 @@ function DreamWallet({cardArray}) {
               <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
         </div>
         <div>
-          {showArray}
           {mappedArray}
         </div>
       </div>
