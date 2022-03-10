@@ -2,6 +2,7 @@ import React, {useState,useEffect} from "react"
 import Navbar from "./Navbar"
 import ActualWallet from "./ActualWallet"
 import WelcomeVibes from './WelcomeVibes';
+import DreamWallet from "./DreamWallet";
 
 
 function PriceFetchManager() {
@@ -59,7 +60,6 @@ function handleEthereumCalculation(event) {
     <Navbar data={data} /> 
     <WelcomeVibes data={data}/>
     <ActualWallet data={data} handleBitcoinCalculation={handleBitcoinCalculation} userBitcoinTotal={userBitcoin} handleEthereumCalculation={handleEthereumCalculation} userEthereumTotal={userEthereum}/>
-    
   </>
   )
 }

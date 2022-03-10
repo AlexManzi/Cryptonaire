@@ -128,6 +128,7 @@ function DreamWallet({}) {
         <div>
           {mappedArray}
         </div>
+       
       </div>
       </div> 
     </>

@@ -29,7 +29,6 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
       </div>
 
 
-
     </div>
   )
 }
