@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {v4 as uuid} from 'uuid'
 import CryptoCard from './CryptoCard'
 
@@ -14,6 +14,14 @@ function DreamWallet({cardArray}) {
   let BTCTotal = DreamBTCAmount * BTCPrice;
   let EthTotal = DreamEthAmount * EthPrice;
   let TotalValue = EthTotal + BTCTotal
+
+  useEffect(() => {
+    fetch('http://localhost:8001/cryptoCard')
+    .then(resp => resp.json())
+    .then(data => {
+      setShowArray(showArray)
+    })
+}, [])
 
   function handleAddToJson() {
     console.log("hello")
@@ -120,6 +128,7 @@ function DreamWallet({cardArray}) {
               <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
         </div>
         <div>
+          {showArray}
           {mappedArray}
         </div>
       </div>
