@@ -4,6 +4,17 @@ import CryptoCard from './CryptoCard'
 // 
 
 function DreamWallet({cardArray}) {
+  const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
+  const [BTCPrice, setBTCPrice] = useState(null)
+  const [DreamEthAmount, setDreamEthAmount] = useState (null);
+  const [EthPrice, setEthPrice] = useState(null);
+  let [arrayName, setArrayName] = useState(null)
+  let [showArray, setShowArray] = useState(null)
+  let BTCTotal = DreamBTCAmount * BTCPrice;
+  let EthTotal = DreamEthAmount * EthPrice;
+  let TotalValue = EthTotal + BTCTotal
+
+
 
   let mappedJson = cardArray.map((card)=> {
     return <CryptoCard 
@@ -12,11 +23,29 @@ function DreamWallet({cardArray}) {
     />
   })
 
+  let newObj = {
+    "id": 2,
+    "DreamEthAmount": {DreamEthAmount},
+    "DreamBTCAmount": {DreamBTCAmount},
+    "EthTotal": {EthTotal},
+    "BTCTotal": {BTCTotal},
+    "name": {arrayName} 
+  }
 
-  const [DreamBTCAmount, setDreamBTCAmount] = useState(null);
-  const [BTCPrice, setBTCPrice] = useState(null)
-  const [DreamEthAmount, setDreamEthAmount] = useState (null);
-  const [EthPrice, setEthPrice] = useState(null);
+  function handleAddToJson() {
+    fetch('http://localhost:8001/cryptoCard', {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newObj)
+  })
+    .then(r => r.json())
+    .then(data => {
+      let newArray = [...mappedJson, data]
+      setShowArray(newArray)
+    })
+}
 
   function handleDreamBTCBase (event) {
     setDreamBTCAmount(event.target.value)
@@ -36,9 +65,10 @@ function DreamWallet({cardArray}) {
     setEthPrice(event.target.value);
   }
 
-  let BTCTotal = DreamBTCAmount * BTCPrice;
-  let EthTotal = DreamEthAmount * EthPrice;
-  let TotalValue = EthTotal + BTCTotal
+  function addNameToArray(event) {
+    setArrayName(event.target.value)
+  }
+
 
 
   return (
@@ -68,12 +98,12 @@ function DreamWallet({cardArray}) {
             <h4> Current Wallet Total = ${TotalValue}</h4>
             
               <label className='Name'>Name of Portfolio  </label> 
-              <input className='Name' type='text' placeholder='Name me' id='inputPortfolioName'></input>
+              <input className='Name' type='text' placeholder='Name me' onChange={addNameToArray} id='inputPortfolioName'></input>
               <br /><br />
-              <button className='btn btn-primary'>Create Card</button>
+              <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
         </div>
         <div>
-          {mappedJson}
+          {showArray}
         </div>
       </div>
     </>
