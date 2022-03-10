@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
+import {v4 as uuid} from 'uuid'
 import CryptoCard from './CryptoCard'
 
 // 
@@ -9,30 +10,30 @@ function DreamWallet({cardArray}) {
   const [DreamEthAmount, setDreamEthAmount] = useState (null);
   const [EthPrice, setEthPrice] = useState(null);
   let [arrayName, setArrayName] = useState(null)
-  let [showArray, setShowArray] = useState(null)
+  let [showArray, setShowArray] = useState([])
   let BTCTotal = DreamBTCAmount * BTCPrice;
   let EthTotal = DreamEthAmount * EthPrice;
   let TotalValue = EthTotal + BTCTotal
 
-
-
-  let mappedJson = cardArray.map((card)=> {
-    return <CryptoCard 
-    key={card.id} 
-    card={card}
-    />
-  })
-
-  let newObj = {
-    "id": 2,
-    "DreamEthAmount": {DreamEthAmount},
-    "DreamBTCAmount": {DreamBTCAmount},
-    "EthTotal": {EthTotal},
-    "BTCTotal": {BTCTotal},
-    "name": {arrayName} 
-  }
+  useEffect(() => {
+    fetch('http://localhost:8001/cryptoCard')
+    .then(resp => resp.json())
+    .then(data => {
+      setShowArray(showArray)
+    })
+}, [])
 
   function handleAddToJson() {
+    console.log("hello")
+    let newObj = {
+      id: uuid(),
+      DreamEthAmount: DreamEthAmount,
+      DreamBTCAmount: DreamBTCAmount,
+      EthTotal: EthTotal,
+      BTCTotal: BTCTotal,
+      name: arrayName
+    }
+    console.log(newObj)
     fetch('http://localhost:8001/cryptoCard', {
       method: "POST",
       headers: {
@@ -40,20 +41,44 @@ function DreamWallet({cardArray}) {
       },
       body: JSON.stringify(newObj)
   })
-    .then(r => r.json())
-    .then(data => {
-      let newArray = [...mappedJson, data]
-      setShowArray(newArray)
+    .then(resp => resp.json())
+    .then(data=>{
+      setShowArray([...showArray, data]);
     })
-}
+    }
+
+    let mappedArray = showArray.map(card => {
+      return (
+        <CryptoCard 
+        key={card.id}
+        card={card}
+        handleDelete={handleDelete}
+        />
+      )
+    })
+
+    function handleDelete(card) {
+      fetch('http://localhost:8001/cryptoCard/'+card.id, {
+        method: "DELETE",
+        headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+        },
+    })
+    let cardItemIndex = showArray.indexOf(card)
+    if(cardItemIndex > -1) {
+      let newArray = [...showArray]
+      newArray.splice(cardItemIndex, 1)
+      setShowArray(newArray)
+    }
+    }
+
 
   function handleDreamBTCBase (event) {
     setDreamBTCAmount(event.target.value)
-
   }
 
   function handleDreamBTCMultiplication (event) {
-   setBTCPrice(event.target.value) 
+  setBTCPrice(event.target.value) 
   }
 
   function handleEthBase (event) {
@@ -104,6 +129,7 @@ function DreamWallet({cardArray}) {
         </div>
         <div>
           {showArray}
+          {mappedArray}
         </div>
       </div>
     </>
