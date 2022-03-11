@@ -424,7 +424,7 @@ html, body {
   flex-wrap: nowrap;
   display: inline-block;
   transition: background-color .2s;
-  min-width: 15%;
+  min-width: 20%;
 }
 
 #CryptoCard:hover {
@@ -441,5 +441,5 @@ html, body {
   padding: 18%
 }
 #problemChildDiv{
-  height: 700px;
+  height: auto;
 }
