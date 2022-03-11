@@ -3,7 +3,7 @@ import React from 'react'
 function About() {
   return (
     <>
-      <footer className='footer-dark'>
+      <footer className='footer-dark' id="About">
             <div className="container">
                 <div className="row">
                     <div  id='founders' className="col-sm-6 col-md-3 item">

@@ -1,3 +1,22 @@
 {
-  "cryptoCard": []
+  "cryptoCard": [
+    {
+      "id": "9bc8dd4a-4d55-44ab-a864-e325d2b32af4",
+      "DreamEthAmount": null,
+      "DreamBTCAmount": null,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "name": null,
+      "total": 0
+    },
+    {
+      "id": "9eaf4365-82bf-4b4d-876c-143c0773527c",
+      "DreamEthAmount": null,
+      "DreamBTCAmount": null,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "name": null,
+      "total": 0
+    }
+  ]
 }
