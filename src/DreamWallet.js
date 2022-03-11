@@ -120,10 +120,12 @@ function DreamWallet({}) {
 
               <div id='dreamInputs'>
                 <div>
+                  <h5 className='titleHeadersDream'>BTC</h5>
                   <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Dream Amount BTC" onChange={handleDreamBTCBase}></input>
                   <input id='userWalletInput2' placeholder='Set Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
                 </div>
                 <div>
+                <h5 className='titleHeadersDream'>ETH</h5>
                   <input type="text" id="userWalletInput1" name="lname" placeholder="Enter Dream Amount ETH" onChange={handleEthBase}></input>
                   <input id='userWalletInput2' placeholder='Set Dream ETH Price' onChange={handleEthMultiplication}></input>
                 </div>

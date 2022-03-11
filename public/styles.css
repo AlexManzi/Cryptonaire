@@ -60,10 +60,18 @@ html, body {
     font-size: 5em; 
 }
 
+#imagine {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* color:#0ca3e9 */
+  font-size: 2em;
+}
+
 .dreamBig{
     text-align: center;
     font-family:Hikou Regular;
     color: rgb(223, 93, 93);
+    margin-top:7%;
+    font-size: 3em;
 
 }
 
@@ -86,14 +94,14 @@ html, body {
     text-align: center;
     background-color: #ff8177;
     background:#DF5D5D;
-    height: 40vh;
+    height: 45vh;
     justify-content: auto;
     
 }
 
 #largeWelcomeBttn, #largeWelcomeBttn2  {
   padding: 1.5%;
-  margin: 0% 1.4%;
+  margin: 1% 1.4%;
   width: 18vh;
 }
 
@@ -112,7 +120,9 @@ html, body {
 }
 
 #beFearless {
-  margin-top:10%
+  margin-top:10%;
+  font-size:29px;
+  color:white;
 }
 
 #actualInfo {
@@ -236,6 +246,10 @@ html, body {
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 }
 
+.titleHeadersDream{
+  margin-left: 3%;
+
+}
 #DreamWalletHeading {
     margin-left: 10px;
     padding-top: 6%;

@@ -1,31 +1,13 @@
 {
   "cryptoCard": [
     {
-      "id": "2568c87a-b914-4c24-a5f7-2340dc45ef1f",
-      "DreamEthAmount": "150",
-      "DreamBTCAmount": "100",
-      "EthTotal": 1500000,
-      "BTCTotal": 5000000,
-      "name": "evan",
-      "total": 6500000
-    },
-    {
-      "id": "0e0d746f-bf81-4067-b203-c99b67a8b91e",
-      "DreamEthAmount": "150",
-      "DreamBTCAmount": "10000000",
-      "EthTotal": 1500000,
-      "BTCTotal": 500000000000,
-      "name": "evan",
-      "total": 500001500000
-    },
-    {
-      "id": "79eccf56-2314-4b25-a9c7-1d6919cebfdc",
-      "DreamEthAmount": "1",
-      "DreamBTCAmount": "1",
-      "EthTotal": 10000,
-      "BTCTotal": 50000,
-      "name": "evan",
-      "total": 60000
+      "id": "225551b6-16f6-47bd-9521-78c1bbe8f2e4",
+      "DreamEthAmount": "2.5",
+      "DreamBTCAmount": "0.08",
+      "EthTotal": 138887.5,
+      "BTCTotal": 4444.400000000001,
+      "name": "Wild 2025",
+      "total": 143331.9
     }
   ]
-} 
+}
