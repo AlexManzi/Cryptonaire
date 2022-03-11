@@ -100,6 +100,13 @@ function DreamWallet({}) {
     setArrayName(event.target.value)
   }
 
+  function formatPrice(dollars){
+    return dollars.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+  }
+
   return (
     <>
       <div id='dreamWallet'> 
@@ -108,24 +115,31 @@ function DreamWallet({}) {
             <h4 id="DreamWalletHeading1"> Anything is Possible  </h4>
             <h4 id="createAlternatives"> Every good idea began with a first step, here's a place to take yours. </h4>
             <h4 id="createAlternatives"> Use this space to not just chart your dreams but to forge a promise on how you'll obtain them. </h4>
-            <div id='dreamInputs'>
-            <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
-            <input id='userWalletInput2' placeholder='Set Your Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
-            <input type="text" id="userWalletInput1" name="lname" placeholder="Enter Your Dream Amount of ETH" onChange={handleEthBase}></input>
-            <input id='userWalletInput2' placeholder='Set Your Dream ETH Price' onChange={handleEthMultiplication}></input>
-          </div>
+            <div id="dreamForms">
 
-        <div id="dreamDollarValueChart">
-            <h3>Dollar Value</h3>
-            <p> Your Current BTC Holdings <br></br>${BTCTotal}</p>
-            <p> Your Current ETH Holdings <br></br> ${EthTotal}</p>
-            <h4> Current Wallet Total = ${TotalValue}</h4>
-            
-              <label className='Name'>Name of Portfolio  </label> 
-              <input className='Name' type='text' placeholder='Name me' onChange={addNameToArray} id='inputPortfolioName'></input>
-              <br /><br />
-              <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
-        </div>
+              <div id='dreamInputs'>
+                <div>
+                  <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Dream Amount BTC" onChange={handleDreamBTCBase}></input>
+                  <input id='userWalletInput2' placeholder='Set Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
+                </div>
+                <div>
+                  <input type="text" id="userWalletInput1" name="lname" placeholder="Enter Dream Amount ETH" onChange={handleEthBase}></input>
+                  <input id='userWalletInput2' placeholder='Set Dream ETH Price' onChange={handleEthMultiplication}></input>
+                </div>
+              </div>
+
+              <div id="dreamDollarValueChart">
+                  <h3>Dollar Value</h3>
+                  <p> Your Current BTC Holdings <br></br>{formatPrice(BTCTotal)}</p>
+                  <p> Your Current ETH Holdings <br></br> {formatPrice(EthTotal)}</p>
+                  <h4> Current Wallet Total = {formatPrice(TotalValue)}</h4>
+                
+                  <label className='Name'>Name of Portfolio  </label> 
+                  <input className='Name' type='text' placeholder='Name me' onChange={addNameToArray} id='inputPortfolioName'></input>
+                  <br /><br />
+                  <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
+              </div>
+            </div>
         <div>
           {mappedArray}
         </div>

@@ -17,6 +17,24 @@
       "BTCTotal": 0,
       "name": null,
       "total": 0
+    },
+    {
+      "id": "b540db95-6d97-4fa3-9e52-a9829b9cb627",
+      "DreamEthAmount": null,
+      "DreamBTCAmount": null,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "name": null,
+      "total": 0
+    },
+    {
+      "id": "5e9ee5c3-2ad1-4f8b-93bb-898445fcbf4b",
+      "DreamEthAmount": null,
+      "DreamBTCAmount": null,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "name": null,
+      "total": 0
     }
   ]
 }
