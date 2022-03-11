@@ -5,13 +5,10 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
   let totalBTC = userBitcoinTotal
   let totalETH = userEthereumTotal
 
-  function formatPrice(dollars){
-    return dollars.toLocaleString('en-US', {
-      style: 'currency',
-      currency: 'USD',
-    })
-  }
-  
+  let formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  })
 
   // console.log(data.bitcoin.usd_market_cap)
   
@@ -32,10 +29,9 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
         <input type="text" id="userWalletInput" name="lname" placeholder="Enter Your ETH" onChange={handleEthereumCalculation}></input>
       </div>
       <div id="actualDollarValueChart" className="dollarValueChart">
-        <p id="walletText"> Your Current BTC Holdings are {formatPrice(userBitcoinTotal)}</p>
-        <p id="walletText"> Your Current ETH Holdings are {formatPrice(userEthereumTotal)}</p>
-        <h4 id="walletTotal"> The Current Value of Your Wallet is 
-        {formatPrice(totalWallet)}</h4>
+        <p id="walletText"> Your Current BTC Holdings are {formatter.format(totalBTC)}</p>
+        <p id="walletText"> Your Current ETH Holdings are {formatter.format(totalETH)}</p>
+        <h4 id="walletText"> <strong>The Current Value of Your Wallet is {formatter.format(totalWallet)}</strong></h4>
       </div>
 
 
