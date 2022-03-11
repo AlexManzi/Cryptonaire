@@ -2,7 +2,7 @@ html, body {
     margin:0;
     padding:0;
     width:100%;
-    font-family: 'Montserrat', sans-serif;
+    
 }
 
 #root {
@@ -20,11 +20,11 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 0.7rem 2rem;
-  font-size: 1.3em;
+  font-size: 1.4em;
   overflow: hidden;
   z-index: 2;
   width: 100%;
-  height: 5.6%;
+  height: 6.2%;
   margin: auto;
   top: 0;
 }
@@ -90,21 +90,25 @@ html, body {
 
 #actualInfo {
   text-align: center;
-  width: 40%;
-  justify-content: auto;
+  justify-content: center;
   display: flex;
-  margin-left: 30%
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 #actualWallet {
     height:100vh;
-    background-color: #150050;
+    background-color: #7f53ac;
+    background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
     color: white;
 }
 
 #walletHeading {
     margin-left: 10px;
-    padding-top: 1%;
+    padding-top: 6%;
     text-align: center;
     font-size: 3em;
 }
@@ -125,13 +129,20 @@ html, body {
     margin: -200%
 }
 
-#inputs {
-  border: 5px solid #DF5D5D ;
+#inputs{
+  border: 1px solid #DF5D5D ;
   margin-top: 2.5%;
   width: 33%;
   height: 30%;
   border-radius: 10px;
   margin-left: 30px;
+  opacity: .9;
+  background-color: #1e1f17;
+  transition: box-shadow .2s
+}
+
+#inputs:hover {
+  box-shadow: 10px 10px 10px lightblue;
 }
 
 #userWalletInput {
@@ -145,7 +156,7 @@ html, body {
     background: none;
     border-radius: 10px;
     color:white;
-    font-size: 1.2em;
+    font-size: 1.5em;
 }
 
 #actualHeading {
@@ -161,13 +172,21 @@ html, body {
 
 .dollarValueChart {
     text-align: center;
-    border: 5px solid #DF5D5D;
+    border: 1px solid #DF5D5D;
     width: 33%;
     height: 30%;
     padding: 10px;
     border-radius: 10px;
     margin-right: 30px;
+    opacity: .9;
+    background-color: #1e1f17;
+    transition: box-shadow .2s
 }
+
+.dollarValueChart:hover {
+  box-shadow: -10px 10px 15px  lightblue;
+}
+
 
 #actualDollarValueChart {
     float: right;
@@ -178,31 +197,27 @@ html, body {
     margin: 0.5%;
 }
 
-
-
-
-
-
 #dreamWallet {
-<<<<<<< HEAD
-  background-color: blue;
-  height: 88vh
-=======
-  background-color: aqua;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
   height: 100vh
->>>>>>> 2b81b658a83959a9988ae74e32f64a4cddcd1919
+
 }
 
 #DreamWalletHeading {
     margin-left: 10px;
-    padding-top: 1%;
+    padding-top: 6%;
     text-align: center;
     font-size: 3em;
+    color: white;
 }
 
 #DreamWalletHeading1 {
   text-align: center;
-  color: #DF5D5D
+  font-size: 1.75em;
+  color: #DF5D5D;
+  font-weight: bold;
 }
 
 #dreamInputs {
@@ -212,6 +227,7 @@ html, body {
   height: 30%;
   border-radius: 10px;
   margin-left: 30px;
+  padding: 50px;
   opacity: .9;
   background-color: #282d32;
   color: white
@@ -244,7 +260,7 @@ html, body {
 }
 
 #userWalletInput2 {
-  margin-top: -8%;
+  margin-top: -6.5%;
   margin-right: 10%;
   padding: 15px;
   width: 30%;
@@ -258,6 +274,7 @@ html, body {
 
 #createAlternatives{
   text-align: center;
+  padding: 5px;
 }
 
 #cardTotal {

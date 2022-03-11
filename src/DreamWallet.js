@@ -106,7 +106,8 @@ function DreamWallet({}) {
         <div id="Form">
             <h2 id="DreamWalletHeading">Dream Wallet</h2>
             <h4 id="DreamWalletHeading1"> Anything is Possible  </h4>
-            <h4 id="createAlternatives"> Create Cards to represent your visions and possibilities. </h4>
+            <h4 id="createAlternatives"> Every good idea began with a first step, here's a place to take yours. </h4>
+            <h4 id="createAlternatives"> Use this space to not just chart your dreams but to forge a promise on how you'll obtain them. </h4>
             <div id='dreamInputs'>
             <input type="text" id="userWalletInput1" name="fname" placeholder="Enter Your Dream Amount of BTC" onChange={handleDreamBTCBase}></input>
             <input id='userWalletInput2' placeholder='Set Your Dream BTC Price' onChange={handleDreamBTCMultiplication}></input>
