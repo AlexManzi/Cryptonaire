@@ -109,6 +109,7 @@ function DreamWallet({}) {
 
   return (
     <>
+
       <div id='dreamWallet'> 
         <div id="Form">
             <h2 id="DreamWalletHeading">Dream Wallet</h2>
