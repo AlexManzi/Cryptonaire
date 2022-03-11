@@ -422,9 +422,7 @@ html, body {
   color: #0ca3e9;
   margin: 5%;
   border: 1px solid #DF5D5D;
-  min-height: 300px;
   flex-wrap: nowrap;
-  min-height: 100%;
   display: inline-block;
   transition: background-color .2s;
   min-width: 15%;
@@ -442,4 +440,7 @@ html, body {
 
 #About {
   padding: 18%
+}
+#problemChildDiv{
+  height: 700px;
 }

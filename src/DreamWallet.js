@@ -141,7 +141,7 @@ function DreamWallet({}) {
                   <button className='btn btn-primary' onClick={handleAddToJson}>Create Card</button>
               </div>
             </div>
-        <div>
+        <div id="problemChildDiv">
           {mappedArray}
         </div>
        
