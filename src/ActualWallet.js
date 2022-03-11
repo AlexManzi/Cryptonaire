@@ -24,6 +24,7 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
         <h4 id="actualInfo">Here's where you can visualize the crypto that you're currently Hodling</h4><h4 id="actualInfo">See where your investments currently stand or envision a path for future saving.</h4>
         <h3 id="amountHeading">The Amount of Coins you're holding</h3>
         <h3 id="actualHeading">The Current Dollar Value of those Coins</h3>
+      
       <div id='inputs'>
         <input type="text" id="userWalletInput" name="fname" placeholder="Enter Your BTC" onChange={handleBitcoinCalculation}></input>
         <input type="text" id="userWalletInput" name="lname" placeholder="Enter Your ETH" onChange={handleEthereumCalculation}></input>
