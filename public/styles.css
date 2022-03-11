@@ -442,4 +442,5 @@ html, body {
 }
 #problemChildDiv{
   height: auto;
+  min-height: 500px;
 }
