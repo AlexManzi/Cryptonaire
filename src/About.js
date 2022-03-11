@@ -1,6 +1,9 @@
 import React from 'react'
 
+
 function About() {
+
+
   return (
     <>
       <footer className='footer-dark' id="About">
@@ -9,7 +12,7 @@ function About() {
                     <div  id='founders' className="col-sm-6 col-md-3 item">
                         <h5>Helpful Links</h5>
                         <ul>
-                            <li><a href="#">Cryptonaire Soundtrack</a></li>
+                            <li><a href="#">Cryptonaire Soundtrack </a></li>
                             <li><a  rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=BH5-rSxilxo">Don't be like Larry</a></li>
                             <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/M-Rosenzweig/Cryptonaire">Cryptonaire Github</a></li>
                         </ul>

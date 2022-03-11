@@ -15,7 +15,7 @@ function WelcomeVibes({data}) {
 
     <div className='leftTitle'>
         <br></br>
-        <h3>REIMAGINE YOUR CRYPTO</h3>
+        <h3>REIMAGINE YOUR CRYPTO EXPERIENCE</h3>
         <br></br>
         <br></br>
         <h3 id=''>  </h3>

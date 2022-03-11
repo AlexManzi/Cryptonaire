@@ -444,11 +444,12 @@ html, body {
 
 #CryptoCard {
   background-color: gray;
-  color: #0ca3e9;
+  color: black;
   margin: 5%;
   border: 1px solid #DF5D5D;
   flex-wrap: nowrap;
   display: inline-block;
+  font-size: 1.4rem;
   transition: background-color .2s;
   min-width: 15%;
 }
