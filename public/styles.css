@@ -231,7 +231,6 @@ html, body {
   margin-top: 2%;
 }
 
-
 #dreamInputs {
   border: 1px solid #DF5D5D ;
   width: 43%;
@@ -253,12 +252,20 @@ html, body {
 
 
 #dreamDollarValueChart {
-  border: 5px solid #DF5D5D ;
+  border: 1px solid #DF5D5D ;
   text-align: center;
     width: 33%;
     height: 30%;
     padding: 10px;
     border-radius: 10px;
+    color: white;
+  opacity: .9;
+  background-color: #1e1f17;
+  transition: box-shadow .2s;
+}
+
+#dreamDollarValueChart:hover  {
+  box-shadow: -10px 10px 15px  lightblue;
 }
 
 #userWalletInput1 {

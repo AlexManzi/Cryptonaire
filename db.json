@@ -1,13 +1,13 @@
 {
   "cryptoCard": [
     {
-      "id": "defb8d89-04ca-4920-9e5a-0c951f44d52d",
-      "DreamEthAmount": "2.5",
-      "DreamBTCAmount": "1",
-      "EthTotal": 50000,
-      "BTCTotal": 100000,
-      "name": "Wild 2025",
-      "total": 150000
+      "id": "24eeb169-7b5d-4592-8652-8b9a3b31cf55",
+      "DreamEthAmount": null,
+      "DreamBTCAmount": null,
+      "EthTotal": 0,
+      "BTCTotal": 0,
+      "name": null,
+      "total": 0
     }
   ]
 }

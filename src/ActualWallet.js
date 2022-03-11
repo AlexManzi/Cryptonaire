@@ -4,14 +4,24 @@ import React from 'react'
 function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handleEthereumCalculation, userEthereumTotal}) {
   let totalBTC = userBitcoinTotal
   let totalETH = userEthereumTotal
+
+  function formatPrice(dollars){
+    return dollars.toLocaleString('en-US', {
+      style: 'currency',
+      currency: 'USD',
+    })
+  }
   
 
   // console.log(data.bitcoin.usd_market_cap)
   
   let totalWallet = (totalBTC + totalETH)
   return (
+    
 
     <div id="actualWallet">
+      <style>
+      </style>
       <h2 id="walletHeading">REALITY WALLET</h2>
         <h3 id="liveCryptoHoldings"> Your Live Crypto Holdings  </h3>
         <h4 id="actualInfo">Here's where you can visualize the crypto that you're currently Hodling</h4><h4 id="actualInfo">See where your investments currently stand or envision a path for future saving.</h4>
@@ -22,10 +32,10 @@ function ActualWallet({ data, handleBitcoinCalculation, userBitcoinTotal, handle
         <input type="text" id="userWalletInput" name="lname" placeholder="Enter Your ETH" onChange={handleEthereumCalculation}></input>
       </div>
       <div id="actualDollarValueChart" className="dollarValueChart">
-        <p id="walletText"> Your Current BTC Holdings are ${userBitcoinTotal}</p>
-        <p id="walletText"> Your Current ETH Holdings are ${userEthereumTotal}</p>
+        <p id="walletText"> Your Current BTC Holdings are {formatPrice(userBitcoinTotal)}</p>
+        <p id="walletText"> Your Current ETH Holdings are {formatPrice(userEthereumTotal)}</p>
         <h4 id="walletTotal"> The Current Value of Your Wallet is 
-        ${totalWallet}</h4>
+        {formatPrice(totalWallet)}</h4>
       </div>
 
 
