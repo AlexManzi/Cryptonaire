@@ -10,16 +10,16 @@ function About() {
                         <h5>Helpful Links</h5>
                         <ul>
                             <li><a href="#">Cryptonaire Soundtrack</a></li>
-                            <li><a href="#">Don't be like Larry</a></li>
-                            <li><a href="#">Cryptonaire Github</a></li>
+                            <li><a  rel="noopener noreferrer" target="_blank" href="https://www.youtube.com/watch?v=BH5-rSxilxo">Don't be like Larry</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/M-Rosenzweig/Cryptonaire">Cryptonaire Github</a></li>
                         </ul>
                     </div>
                     <div  id='founders' className="col-sm-6 col-md-3 item">
                         <h5>Meet The Team</h5>
                         <ul>
-                            <li><a href="https://github.com/M-Rosenzweig">Moshe</a></li>
-                            <li><a href="https://github.com/AlexManzi">Alex</a></li>
-                            <li><a href="https://github.com/JohnsonEvan">Evan</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/M-Rosenzweig">Moshe</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/AlexManzi">Alex</a></li>
+                            <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/JohnsonEvan">Evan</a></li>
                         </ul>
                     </div>
                     <div className="col-md-6 item text">

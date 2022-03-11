@@ -79,15 +79,40 @@ html, body {
 .leftTitle {
 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 40px;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 2%;
     padding: 20px;
-    text-align: left;
+    text-align: center;
     background-color: #ff8177;
     background:#DF5D5D;
-    max-width: fit-content;
-    height: 30vh;
+    height: 40vh;
     justify-content: auto;
     
+}
+
+#largeWelcomeBttn, #largeWelcomeBttn2  {
+  padding: 1.5%;
+  margin: 0% 1.4%;
+  width: 18vh;
+}
+
+#largeWelcomeBttn2 {
+  background-color: #ec9ed6; 
+  transition: background-color .2s;
+   color:#282d32
+
+}
+
+
+#largeWelcomeBttn2:hover {
+  background-color:#a88beb;
+  color:white;
+  /* padding:2% .5s; */
+}
+
+#beFearless {
+  margin-top:10%
 }
 
 #actualInfo {
@@ -191,7 +216,8 @@ html, body {
 
 #walletText {
   font-size: 1.5em;
-  margin-right: -90px;
+  float: inline-end;
+  margin-top: 3%;
 
 }
 
